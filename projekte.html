@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projekte – Ziva Bau GmbH</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header">
+  <nav class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Ziva Bau Logo" class="logo-img">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html#leistungen">Leistungen</a></li>
+      <li><a href="projekte.html">Projekte</a></li>
+      <li><a href="index.html#warum-uns">Warum wir</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="nav-phone" href="tel:+493012345678">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>030 · 123 456 78</span>
+      </a>
+      <a class="btn btn-primary" href="index.html#kontakt" style="padding:10px 18px;">Anfragen</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html#leistungen">Leistungen</a></li>
+      <li><a href="projekte.html">Projekte</a></li>
+    <li><a href="index.html#warum-uns">Warum wir</a></li>
+    <li><a href="index.html#faq">FAQ</a></li>
+    <li><a href="index.html#kontakt">Kontakt</a></li>
+  </ul>
+</div>
+
+<main>
+
+  <!-- PROJEKTE -->
+  <!-- STATUS: Aktuell zeigt diese Seite einen "im Aufbau"-Hinweis (siehe .projects-empty
+       unten), noch keine echten Projekte.
+       SO AKTIVIERT IHR SPÄTER EURE ECHTEN PROJEKTE:
+       1. Den Block ".projects-empty" (direkt unten) löschen oder auskommentieren
+       2. Den BEISPIEL-KARTEN-Block darunter einkommentieren, indem ihr die
+          Kommentarmarkierung am Anfang und am Ende dieses Blocks entfernt
+       3. Pro Karte: Bildpfad (assets/images/...), project-tag und Titel anpassen.
+          Eine ganze <article class="project-card">...</article> lässt sich auch
+          duplizieren, um weitere Projekte zu ergänzen — das Grid passt sich
+          automatisch an. -->
+  <section class="section projects-section" id="projekte">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Projekte</span>
+        <h2>Abgeschlossene Projekte</h2>
+        <p>Eine Auswahl unserer Arbeit — weitere Referenzen ergänzen wir laufend.</p>
+      </div>
+
+      <div class="projects-empty reveal">
+        <div class="projects-empty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Diese Seite ist noch im Aufbau</h3>
+        <p>Hier stellen wir in Kürze eine Auswahl unserer abgeschlossenen Projekte vor. Schauen Sie gerne bald wieder vorbei.</p>
+      </div>
+
+      <!-- BEISPIEL-KARTEN (auskommentiert) — siehe Anleitung oben zum Reaktivieren:
+      <div class="project-grid reveal">
+        <article class="project-card">
+          <div class="project-img">
+            <img src="assets/images/aussenputz.jpg" alt="Fassadenputz an einem Mehrfamilienhaus">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Außenputz</span>
+            <h4>Fassadenputz – Mehrfamilienhaus</h4>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img">
+            <img src="assets/images/innenputz-fertig.jpg" alt="Fertiggestellter Innenausbau einer Neubauwohnung">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Innenputz</span>
+            <h4>Innenausbau – Neubauwohnung</h4>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img">
+            <img src="assets/images/wdvs.jpg" alt="Fassade mit neu aufgebrachtem Wärmedämmverbundsystem">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">WDVS</span>
+            <h4>Fassadendämmung – Neubau</h4>
+          </div>
+        </article>
+      </div>
+      -->
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="Ziva Bau Logo" class="footer-logo">
+      <span class="footer-tagline">Innenputz · Außenputz · WDVS</span>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ziva Bau GmbH — Innenputz, Außenputz &amp; WDVS</span>
+      <ul class="footer-links">
+        <li><a href="index.html#kontakt">Anfrage</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="#" data-open-cookie-settings>Cookie-Einstellungen</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <!-- ===================== WHATSAPP-BUTTON ===================== -->
+  <!-- WICHTIG: "491234567890" unten durch eure echte WhatsApp-Nummer ersetzen
+       (internationales Format OHNE +, 00 oder Leerzeichen, z.B. deutsche Handynummer
+       0151 234567 wird zu 49151234567). Der vorbelegte Text hinter ?text= ist die
+       Nachricht, die beim Öffnen automatisch im Chat vorausgefüllt wird. -->
+  <a href="https://wa.me/491234567890?text=Hallo%20Ziva%20Bau%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen."
+     class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp kontaktieren">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="#FFFFFF"><path d="M16.004 3C9.377 3 4 8.373 4 15c0 2.386.7 4.61 1.906 6.478L4 29l7.72-1.878A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm6.99 16.987c-.297.836-1.47 1.53-2.41 1.73-.64.135-1.478.243-4.29-.92-3.6-1.49-5.916-5.135-6.096-5.372-.173-.238-1.46-1.943-1.46-3.706 0-1.762.926-2.63 1.253-2.99.328-.36.716-.45.955-.45.238 0 .478.003.686.013.22.01.516-.083.807.616.297.716 1.01 2.478 1.098 2.658.09.18.15.39.03.628-.12.238-.18.386-.358.594-.18.208-.376.464-.537.624-.18.18-.367.375-.157.734.208.36.926 1.528 1.988 2.475 1.366 1.218 2.518 1.596 2.877 1.776.36.18.568.15.777-.09.208-.24.895-1.043 1.134-1.402.238-.36.477-.298.804-.18.328.12 2.08.982 2.437 1.16.358.18.596.268.686.418.09.15.09.867-.207 1.703z"/></svg>
+  </a>
+
+  <!-- ===================== COOKIE-BANNER ===================== -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis">
+    <div class="cookie-inner">
+      <p class="cookie-text">
+        <strong>Diese Website respektiert Ihre Privatsphäre.</strong>
+        Wir setzen selbst keine Cookies. Optional laden wir Schriftarten von Google
+        (Google Fonts) nach – dabei wird Ihre IP-Adresse an Google-Server übertragen.
+        Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+      <div class="cookie-actions">
+        <button type="button" class="cookie-btn" id="cookieOpenSettings">Einstellungen</button>
+        <button type="button" class="cookie-btn" id="cookieRejectAll">Nur notwendige</button>
+        <button type="button" class="cookie-btn primary" id="cookieAcceptAll">Alle akzeptieren</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= COOKIE-EINSTELLUNGEN-MODAL ================= -->
+  <div class="cookie-modal-overlay" id="cookieModalOverlay">
+    <div class="cookie-modal" role="dialog" aria-label="Cookie-Einstellungen">
+      <h3>Cookie-Einstellungen</h3>
+      <p>
+        Wir verwenden selbst keine Cookies und kein Tracking. Die einzige optionale
+        Komponente sind extern eingebundene Schriftarten von Google. Sie können frei
+        wählen, ob diese geladen werden dürfen — ohne Zustimmung nutzt die Seite
+        automatisch eine gleichwertige Systemschrift.
+      </p>
+
+      <div class="cookie-option">
+        <div class="cookie-option-text">
+          <strong>Technisch notwendig</strong>
+          <span>Speichert ausschließlich Ihre Cookie-Auswahl. Immer aktiv.</span>
+        </div>
+        <label class="cookie-switch">
+          <input type="checkbox" checked disabled>
+          <span class="track"></span>
+        </label>
+      </div>
+
+      <div class="cookie-option">
+        <div class="cookie-option-text">
+          <strong>Externe Schriftarten (Google Fonts)</strong>
+          <span>Lädt Schriftdateien von Google-Servern nach; überträgt dabei Ihre IP-Adresse in die USA.</span>
+        </div>
+        <label class="cookie-switch">
+          <input type="checkbox" id="cookieFontsToggle">
+          <span class="track"></span>
+        </label>
+      </div>
+
+      <div class="cookie-modal-actions">
+        <button type="button" class="cookie-btn" id="cookieModalClose">Abbrechen</button>
+        <button type="button" class="cookie-btn" id="cookieModalSave">Auswahl speichern</button>
+        <button type="button" class="cookie-btn primary" id="cookieModalAcceptAll">Alle akzeptieren</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<script src="assets/script.js"></script>
+
+</body>
+</html>

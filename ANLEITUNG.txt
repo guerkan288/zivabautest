@@ -1,0 +1,466 @@
+═════════════════════════════════════════════════════════════════════
+  ZIVA BAU WEBSITE — HOSTING-ANLEITUNG
+═════════════════════════════════════════════════════════════════════
+
+Diese Website besteht aus mehreren Dateien und kann auf jedem Standard-Webhoster
+hochgeladen werden (IONOS, Strato, All-Inkl, Hosteurope, etc.).
+
+═════════════════════════════════════════════════════════════════════
+ 📂 ORDNERSTRUKTUR
+═════════════════════════════════════════════════════════════════════
+
+ziva-bau-website/
+├── index.html                (Startseite)
+├── impressum.html            (Impressum)
+├── datenschutz.html          (Datenschutz)
+├── projekte.html             (Projekte — aktuell "im Aufbau", siehe unten)
+├── assets/
+│   ├── style.css             (Alle Stile)
+│   ├── script.js             (Alle Funktionen & Animationen)
+│   └── images/
+│       ├── logo.png             (Firmenlogo)
+│       ├── aussenputz.jpg       (Werkfoto: Außenputz)
+│       ├── innenputz.jpg        (Werkfoto: Innenputz, Leistungen-Tab)
+│       ├── innenputz-fertig.jpg (Werkfoto: Innenputz, Hero-Bereich)
+│       └── wdvs.jpg             (Werkfoto: Wärmedämmverbundsystem)
+└── ANLEITUNG.txt             (Diese Datei)
+
+═════════════════════════════════════════════════════════════════════
+ ⚙️ VOR DEM HOCHLADEN: DATEN ANPASSEN
+═════════════════════════════════════════════════════════════════════
+
+Öffne die `index.html` im Editor (z.B. VS Code, Notepad++, Sublime Text)
+und ersetze diese Platzhalter mit deinen echten Daten:
+
+1. TELEFON
+   Suche nach: 030 · 123 456 78
+   Ersetze mit: Deine Telefonnummer (z.B. 030 · 987 654 32)
+
+2. E-MAIL
+   Suche nach: info@ziva-bau.de
+   Ersetze mit: Deine E-Mail-Adresse
+
+3. ADRESSE
+   Suche nach: Baustraße 14, 12045 Berlin
+   Ersetze mit: Deine Geschäftsadresse
+
+4. ÖFFNUNGSZEITEN (optional)
+   Suche nach: Mo–Fr 7:00–17:00 Uhr
+   Ersetze mit: Deine Geschäftszeiten
+
+Mache die gleichen Änderungen auch in:
+  - impressum.html (Adresse, Telefon, E-Mail, GF-Name, Handelsregister, USt-Nr.)
+  - datenschutz.html (Adresse, E-Mail, Telefon)
+
+═════════════════════════════════════════════════════════════════════
+ ⚖️  RECHTLICHES: IMPRESSUM, DATENSCHUTZ & COOKIE-BANNER
+═════════════════════════════════════════════════════════════════════
+
+WICHTIGER HINWEIS VORAB:
+Ich bin kein Anwalt. Die folgenden Texte und die Cookie-Lösung wurden
+nach bestem Wissen und aktuellem Rechtsstand (Stand: 2026) erstellt,
+ersetzen aber keine rechtliche Beratung im Einzelfall. Für verbindliche
+Rechtssicherheit — insbesondere bevor die Seite live geht — empfehlen
+wir die Prüfung durch einen auf IT-/Datenschutzrecht spezialisierten
+Anwalt oder eure Handwerkskammer. Impressumsverstöße können mit bis
+zu 50.000 € Bußgeld und zusätzlich mit kostenpflichtigen Abmahnungen
+von Wettbewerbern geahndet werden — das lohnt sich zu prüfen.
+
+── IMPRESSUM (impressum.html) ──────────────────────────────────────
+
+Rechtsgrundlage ist § 5 Digitale-Dienste-Gesetz (DDG) — das hat 2024
+das frühere Telemediengesetz (TMG) abgelöst. Inhaltlich sind die
+Pflichtangaben fast gleich geblieben, nur der Verweis wurde umgestellt.
+
+☐ Diese Platzhalter MÜSSEN vor dem Livegang ausgefüllt werden:
+  • [Name der Geschäftsführer]  → echter Vor- und Nachname
+  • [Registernummer] / [Gericht] → z. B. "HRB 12345 B", "Amtsgericht Berlin"
+  • [USt-IdNr.]                  → eure Umsatzsteuer-ID (falls vorhanden)
+
+☐ NEU ab Dezember 2026: Die Wirtschafts-Identifikationsnummer (W-IdNr.)
+  wird ebenfalls Pflichtangabe. Sie wird euch automatisch vom
+  Bundeszentralamt für Steuern zugeteilt — sobald ihr sie habt, einfach
+  den Platzhalter im Abschnitt "Registrierung" ersetzen.
+
+☐ Der Link zur EU-Streitschlichtungsplattform (OS-Plattform) wurde
+  bewusst NICHT eingebaut — die Plattform wurde am 20.07.2025 von der
+  EU-Kommission endgültig abgeschaltet. Falls ihr eine ältere Vorlage
+  von woanders übernehmt, entfernt einen solchen Link unbedingt, das
+  gilt sonst als veraltete/irreführende Angabe.
+
+── DATENSCHUTZERKLÄRUNG (datenschutz.html) ─────────────────────────
+
+Enthält jetzt: Kontaktformular-Hinweis, Betroffenenrechte, einen
+ausführlichen Cookie-Abschnitt sowie einen eigenen Abschnitt zu
+Google Fonts (siehe unten). Passt den Kontaktformular-Absatz an,
+falls ihr später ein E-Mail-Backend (Formspree/PHP, siehe weiter
+unten) anschließt — dann könnt ihr ergänzen, welcher Dienstleister
+die Anfrage verarbeitet.
+
+── COOKIE-BANNER: WIE ER FUNKTIONIERT ───────────────────────────────
+
+Die Website setzt von sich aus KEINE Cookies und lädt ohne Zustimmung
+NICHTS von Drittanbietern nach. Der einzige "kritische" Programmpunkt
+sind die drei Google-Schriftarten (Bricolage Grotesque, Plus Jakarta
+Sans, IBM Plex Mono) — deren Server-Verbindung überträgt beim Laden
+automatisch die IP-Adresse des Besuchers an Google (Urteil LG München,
+20.01.2022, Az. 3 O 17493/20). Deshalb:
+
+  • Beim ersten Besuch erscheint unten ein Banner mit drei Optionen:
+    "Einstellungen" / "Nur notwendige" / "Alle akzeptieren"
+  • Nur bei "Alle akzeptieren" (oder im Modal aktiviert) wird die
+    Google-Fonts-Verbindung tatsächlich aufgebaut
+  • Bei "Nur notwendige" bzw. ohne Reaktion bleibt die Seite mit einer
+    optisch sehr ähnlichen Systemschrift (z. B. Georgia/Segoe UI) —
+    komplett ohne Verbindung zu Google
+  • Die getroffene Wahl wird im Local Storage des Browsers gespeichert
+    (kein Cookie im klassischen Sinn, technisch notwendig, daher ohne
+    weitere Einwilligung zulässig) — der Banner erscheint dadurch nicht
+    bei jedem Besuch erneut
+  • Über den Link "Cookie-Einstellungen" im Footer kann die Wahl
+    jederzeit geändert werden
+
+OPTION: Google Fonts komplett lokal hosten (empfohlene Königsklasse)
+Rechtlich noch sauberer als der Cookie-Banner ist es, die Schriften
+direkt auf dem eigenen Server zu speichern — dann entsteht überhaupt
+keine Verbindung zu Google und ihr braucht für die Schriftarten gar
+keinen Cookie-Hinweis mehr. So geht's:
+  1. Auf https://fonts.google.com die drei Schriften herunterladen:
+     "Bricolage Grotesque", "Plus Jakarta Sans", "IBM Plex Mono"
+  2. Die .ttf-Dateien in assets/fonts/ ablegen
+  3. In assets/style.css ganz oben @font-face-Regeln ergänzen, z. B.:
+       @font-face {
+         font-family: 'Plus Jakarta Sans';
+         src: url('fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+         font-weight: 400; font-display: swap;
+       }
+     (für jeden benötigten Schriftschnitt eine eigene Regel)
+  4. In script.js den kompletten Cookie-Banner-Block entfernen und in
+     index.html/impressum.html/datenschutz.html die Banner- und
+     Modal-<div>-Blöcke löschen
+  5. In datenschutz.html den Abschnitt "Externe Schriftarten (Google
+     Fonts)" entfernen bzw. durch einen Satz ersetzen wie: "Wir nutzen
+     lokal gehostete Schriftarten, es fließen keine Daten an Dritte."
+Diesen Schritt könnt ihr jederzeit später nachholen, sobald ihr Zeit
+dafür habt — bis dahin ist der eingebaute Cookie-Banner eine solide,
+rechtlich abgesicherte Zwischenlösung.
+
+═════════════════════════════════════════════════════════════════════
+ 🆕 NEUE FUNKTIONEN: WHATSAPP, GOOGLE-BEWERTUNGEN & PROJEKTE
+═════════════════════════════════════════════════════════════════════
+
+── WHATSAPP-BUTTON (grüner Button, unten rechts auf jeder Seite) ──────
+
+Aktuell verlinkt der Button auf eine Platzhalter-Nummer. So trägt ihr
+eure echte Nummer ein:
+  1. Öffnet index.html, impressum.html, datenschutz.html und
+     projekte.html im Editor
+  2. Sucht jeweils nach: 491234567890
+  3. Ersetzt das durch eure WhatsApp-Nummer im internationalen Format
+     OHNE +, 00 oder Leerzeichen — z. B. wird aus 0151 234567 die
+     Zeichenfolge 49151234567
+  4. Optional: den Text hinter "?text=" in der gleichen Zeile anpassen
+     — das ist die Nachricht, die beim Öffnen im Chat vorausgefüllt ist
+
+── GOOGLE-BEWERTUNGEN (Karte über dem Kontaktformular) ─────────────────
+
+Zeigt aktuell einen Platzhalter (4,9 von 5, als solcher gekennzeichnet).
+Sobald euer Google-Unternehmensprofil eingerichtet ist:
+  1. In index.html nach "google-reviews-card" suchen
+  2. "4,9 von 5" durch eure echte Bewertung ersetzen
+  3. Den Link bei "Auf Google ansehen" (aktuell google.com/maps) durch
+     euren echten Profil-Link ersetzen — zu finden über euer
+     Google-Unternehmensprofil unter "Profil teilen"
+  4. Für eine Anzeige, die sich automatisch aktualisiert (statt eine
+     Zahl von Hand zu pflegen), gibt es Widget-Dienste wie Elfsight,
+     EmbedSocial oder Trustindex — die liefern ein fertiges Code-
+     Snippet mit eurer Google-Place-ID zum Einfügen an gleicher Stelle
+
+── PROJEKTE-SEITE (eigene Seite, nur über das Menü erreichbar) ────────
+
+projekte.html zeigt aktuell "Diese Seite ist noch im Aufbau", damit
+ihr sie erst mit echten, abgeschlossenen Projekten befüllt, wenn ihr
+soweit seid. So aktiviert ihr eure erste Projekt-Galerie:
+  1. projekte.html im Editor öffnen, nach "projects-empty" suchen
+  2. Diesen Block löschen oder mit <!-- und --> auskommentieren
+  3. Direkt darunter liegt ein bereits fertiger, nur auskommentierter
+     Beispiel-Block mit 3 Projekt-Karten (Suchbegriff: BEISPIEL-KARTEN)
+     — die Kommentarmarkierung am Anfang und Ende dieses Blocks
+     entfernen, schon ist er aktiv
+  4. Pro Karte: Bildpfad (assets/images/...), die kleine Kategorie-
+     Beschriftung (project-tag) und den Titel an euer echtes Projekt
+     anpassen. Für weitere Projekte einfach eine ganze
+     <article class="project-card"> ... </article> duplizieren — das
+     Raster passt sich automatisch an, auch bei 5, 6 oder mehr Karten
+
+═════════════════════════════════════════════════════════════════════
+ 🚀 HOCHLADEN ZU IONOS (mit FTP)
+═════════════════════════════════════════════════════════════════════
+
+1. Hosting aktivieren / FTP-Zugang einrichten
+   - Melde dich bei ionos.de an
+   - Gehe zu "Hosting" → Dein Hosting-Paket
+   - Aktiviere FTP (oder "SFTP" für sicherer)
+   - Notiere dir:
+     * FTP-Server (z.B. ftp.deinedomain.de)
+     * Benutzername (z.B. u123456789)
+     * Passwort
+
+2. FTP-Client herunterladen
+   - Kostenlos: FileZilla (https://filezilla-project.org)
+   - Oder: WinSCP (Windows)
+
+3. FileZilla einrichten
+   - Öffne FileZilla
+   - "Datei" → "Servermanager"
+   - Klicke "Neuer Server"
+   - Gib ein:
+     * Host: dein FTP-Server
+     * Benutzer: dein Benutzername
+     * Passwort: dein Passwort
+   - Verbinden
+
+4. Dateien hochladen
+   - Im rechten Fenster navigiere zu: public_html/ (oder www/)
+   - Ziehe die Ordnerstruktur dort rein:
+     * index.html
+     * impressum.html
+     * datenschutz.html
+     * assets/ (kompletter Ordner mit CSS, JS, Bilder)
+
+5. Fertig!
+   - Öffne http://deinedomain.de im Browser
+   - Website sollte live sein
+
+═════════════════════════════════════════════════════════════════════
+ 🚀 HOCHLADEN ZU STRATO (mit FTP)
+═════════════════════════════════════════════════════════════════════
+
+1. FTP-Zugänge prüfen
+   - Melde dich im STRATO-Kundencenter an
+   - "Produkte" → Dein Hosting
+   - "Dateimanager öffnen" oder "FTP-Daten anzeigen"
+
+2. Mit FileZilla verbinden (wie oben bei IONOS)
+
+3. Hochladen
+   - Der Zielordner ist meist: httpdocs/ oder html/
+   - Alle Dateien (index.html, assets/, etc.) dahin
+
+═════════════════════════════════════════════════════════════════════
+ 🚀 HOCHLADEN ZU ALL-INKL (mit Dateimanager)
+═════════════════════════════════════════════════════════════════════
+
+1. KAS (All-Inkl Kundencenter) öffnen
+   - https://kas.all-inkl.com
+
+2. "Dateimanager" klicken
+   - Navigiere zu: public_html/
+
+3. Dateien hochladen
+   - Klick "Datei hochladen"
+   - Wähle alle Dateien aus:
+     * index.html
+     * impressum.html
+     * datenschutz.html
+   - Hochladen
+
+4. assets-Ordner hochladen
+   - Klick "Ordner hochladen" → assets/
+   - Mit allen Inhalten
+
+═════════════════════════════════════════════════════════════════════
+ 🚀 HOCHLADEN ZU HOSTEUROPE (mit cPanel)
+═════════════════════════════════════════════════════════════════════
+
+1. cPanel öffnen
+   - https://deinedomain.de:2083/cPanel
+   - Login mit cPanel-Daten
+
+2. "Dateimanager" öffnen
+   - Navigiere zu: public_html/
+
+3. Alle Dateien hochladen
+   - Drag & Drop oder "Upload"
+   - Komplette Ordnerstruktur mit assets/
+
+═════════════════════════════════════════════════════════════════════
+ 🆗 KONTAKTFORMULAR KONFIGURIEREN
+═════════════════════════════════════════════════════════════════════
+
+Das Formular im Footer funktioniert lokal (zeigt "Danke"-Meldung an),
+aber versendet derzeit KEINE E-Mails.
+
+Um echte E-Mail-Benachrichtigungen zu bekommen, brauchst du einen Service:
+
+OPTION 1: Formspree (einfach, kostenlos)
+──────────────────────────────────────────
+1. Gehe zu https://formspree.io
+2. Registriere dich (kostenlos)
+3. Erstelle ein neues Projekt für deine Domain
+4. Du bekommst eine "Action URL", z.B.:
+   https://formspree.io/f/xyzabc123
+
+5. Öffne index.html im Editor
+6. Suche nach: <form id="contactForm"
+7. Ersetze die Action:
+   VORHER: (action="" ist leer)
+   NACHHER: action="https://formspree.io/f/xyzabc123" method="POST"
+
+8. Speichern und neu hochladen
+9. Fertig! Formulare kommen jetzt per E-Mail
+
+OPTION 2: PHP auf dem Hoster nutzen
+────────────────────────────────────
+Falls dein Hoster PHP unterstützt (alle modernen Hoster tun das):
+1. Erstelle eine neue Datei: mailer.php
+2. Code (Beispiel):
+   <?php
+   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+     $name = htmlspecialchars($_POST['name']);
+     $email = htmlspecialchars($_POST['email']);
+     $subject = htmlspecialchars($_POST['topic']);
+     $message = htmlspecialchars($_POST['message']);
+     
+     $to = "info@ziva-bau.de";
+     $headers = "From: " . $email;
+     $body = "Name: $name\nE-Mail: $email\nThema: $subject\n\n$message";
+     
+     mail($to, $subject, $body, $headers);
+     echo "sent";
+   }
+   ?>
+
+3. In index.html, in der Form:
+   action="mailer.php" method="POST"
+
+4. Hochladen (PHP-Datei und index.html)
+5. Testen!
+
+═════════════════════════════════════════════════════════════════════
+ 🔧 ANPASSUNGEN NACH DEM HOCHLADEN
+═════════════════════════════════════════════════════════════════════
+
+LOGO AUSTAUSCHEN:
+─────────────────
+Wenn du später ein anderes Logo verwenden möchtest:
+1. Ersetze die Datei: assets/images/logo.png
+   (Achte auf den gleichen Dateinamen und Format PNG)
+2. Hochladen
+3. Browser-Cache leeren (Strg+Shift+Del) und neuladen
+
+FOTOS AUSTAUSCHEN:
+──────────────────
+1. Ersetze:
+   - assets/images/aussenputz.jpg (für Außenputz-Foto)
+   - assets/images/innenputz.jpg (für Innenputz-Foto)
+2. Hochladen
+
+TEXTE BEARBEITEN:
+─────────────────
+1. Öffne index.html im Editor
+2. Bearbeite Texte direkt (z.B. Projektbeschreibungen, FAQ)
+3. Speichern & hochladen
+
+FARBEN ÄNDERN:
+──────────────
+1. Öffne assets/style.css
+2. Am Anfang findest du:
+   --accent: #8C6624  (Gold-Farbe)
+   --ink: #3C3C3C      (Anthrazit-Farbe)
+3. Ersetze mit deinen Farben (im HEX-Format)
+4. Speichern & hochladen
+
+═════════════════════════════════════════════════════════════════════
+ ⚡ PERFORMANCE & SICHERHEIT
+═════════════════════════════════════════════════════════════════════
+
+✓ Dateigröße:
+  - HTML: ~550 KB (ok)
+  - CSS: ~18 KB (ok)
+  - JS: ~5 KB (sehr klein)
+  - Bilder: ~280 KB (ok)
+  → Gesamt: ~850 KB
+  → Ladezeit: schnell (1-2 Sekunden)
+
+✓ Mobile-freundlich:
+  - Responsive Design ✓
+  - Funktioniert auf Handy, Tablet, Desktop ✓
+  - Test: https://search.google.com/test/mobile-friendly
+
+✓ Sicherheit:
+  - Keine externe Abhängigkeiten (keine NPM-Pakete nötig)
+  - Keine Datenbank-Verbindungen
+  - Kein Tracking oder Cookies
+  - HTTPS empfohlen (frag deinen Hoster nach SSL-Zertifikat)
+
+═════════════════════════════════════════════════════════════════════
+ 📊 DOMAIN VERBINDEN
+═════════════════════════════════════════════════════════════════════
+
+Falls die Website später unter ziva-bau.de erreichbar sein soll:
+
+1. Domain registrieren (z.B. bei:
+   - Namecheap.com
+   - IONOS
+   - Strato
+   - All-Inkl
+
+2. Bei deinem Domain-Provider:
+   - DNS / Nameserver bearbeiten
+   - A-Record auf die IP deines Hosters setzen
+   - Oder CNAME auf deinen Hoster zeigen lassen
+
+3. Bei deinem Hoster:
+   - Die Domain als "Addon Domain" oder "Haupt-Domain" eintragen
+   - SSL-Zertifikat aktivieren (meist kostenlos)
+
+4. 24-48 Stunden warten (DNS-Propagation)
+5. https://ziva-bau.de funktioniert!
+
+═════════════════════════════════════════════════════════════════════
+ ❓ HÄUFIG GESTELLTE FRAGEN
+═════════════════════════════════════════════════════════════════════
+
+F: Die Website lädt sehr langsam?
+A: Typisch bei der ersten Ladung wegen der Bilder. Danach ist es
+   schneller (Browser-Cache). Falls persistent langsam: Frag deinen
+   Hoster nach Speicher/CPU oder nutze einen CDN.
+
+F: Formular zeigt Error?
+A: 1) Hast du die action="..." in der Form gesetzt?
+   2) Ist mailer.php auf dem Server?
+   3) Prüfe die Dateirechte (644 für .html, .jpg, .css)
+
+F: Bilder zeigen nicht?
+A: 1) Prüf, dass assets/images/ komplett hochgeladen ist
+   2) Achte auf Groß-/Kleinschreibung (Dateinamen!)
+   3) Öffne Browser-Konsole (F12) → Errors prüfen
+
+F: Kann ich die Website offline nutzen?
+A: Ja, download alle Dateien und öffne index.html im Browser.
+
+F: Kann ich die Website auf Handy bearbeiten?
+A: Ja, benutze deinen Dateimanager beim Hoster, um Dateien zu bearbeiten.
+   Oder nutze einen FTP-Client auf dem Handy (FileSafe, etc.)
+
+═════════════════════════════════════════════════════════════════════
+ 📞 SUPPORT
+═════════════════════════════════════════════════════════════════════
+
+Egal welcher Hoster — alle bieten Support:
+- IONOS: ionos.de → Hilfe
+- Strato: strato.de → Support
+- All-Inkl: all-inkl.com → Support Ticket
+
+Außerdem:
+- Google Search: "wie lade ich Dateien auf [Hoster] hoch"
+- YouTube: FTP-Tutorials
+- ChatGPT/Claude: Gib die Fehlermeldung ein
+
+═════════════════════════════════════════════════════════════════════
+
+Viel Erfolg mit deiner Website! 🎉
+
+Ziva Bau — Putz, Sanierung, Abriss
+═════════════════════════════════════════════════════════════════════

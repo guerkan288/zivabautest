@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ziva Bau GmbH — Innenputz, Außenputz & WDVS in Berlin</title>
+<!-- Google Fonts werden NICHT fest verlinkt: script.js lädt sie erst nach
+       Zustimmung im Cookie-Banner nach (siehe Abschnitt "Externe Schriftarten"
+       in der Datenschutzerklärung). Ohne Zustimmung greift der System-Font-
+       Stack aus assets/style.css – die Seite bleibt voll funktionsfähig. -->
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header">
+  <nav class="nav-inner">
+    <a href="#top" class="logo">
+      <img src="assets/images/logo.png" alt="Ziva Bau Logo" class="logo-img">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="projekte.html">Projekte</a></li>
+      <li><a href="#warum-uns">Warum wir?</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="nav-phone" href="tel:+493012345678">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+49 163 3792527</span>
+      </a>
+      <a class="btn btn-primary" href="#kontakt" style="padding:10px 18px;">Anfragen</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="projekte.html">Projekte</a></li>
+    <li><a href="#warum-uns">Warum wir?</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-blob hb-a" aria-hidden="true"></div>
+    <div class="hero-blob hb-b" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-eyebrow">Ziva Bau GmbH · Ihr Putzspezialist aus Berlin</span>
+        <h1>Ziva Bau GmbH –<br><span class="accent-word">saubere Arbeit, termintreu.</span></h1>
+        <p class="hero-sub">Ziva Bau ist Ihr Spezialist für Innenputz, Außenputz, WDVS und Fassadentechnik in Berlin — mit erfahrenem Team und persönlicher Beratung.</p>
+        <div class="hero-ctas">
+          <a href="#kontakt" class="btn btn-primary">Kostenlos anfragen</a>
+          <a href="#leistungen" class="btn btn-outline">Leistungen ansehen</a>
+        </div>
+      </div>
+
+      <div class="bento">
+        <div class="bento-card bento-main">
+          <div class="photo-split">
+            <div class="photo-pane">
+              <img src="assets/images/aussenputz.jpg" alt="Ziva Bau Mitarbeiter verputzt eine Hausfassade auf dem Gerüst">
+              <span class="pane-tag">Außenputz</span>
+            </div>
+            <div class="photo-pane">
+              <img src="assets/images/innenputz-fertig.jpg" alt="Fertig verputzter Innenraum von Ziva Bau, sauber und bezugsfertig">
+              <span class="pane-tag">Innenputz</span>
+            </div>
+            <div class="photo-pane">
+              <img src="assets/images/wdvs.jpg" alt="Frisch verputzte Fassade mit Wärmedämmverbundsystem im Neubau">
+              <span class="pane-tag">WDVS</span>
+            </div>
+          </div>
+          <p class="bento-caption">Einblicke in unsere Arbeit</p>
+        </div>
+
+        <div class="bento-card bento-highlights">
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Langjährig erfahren in der Branche</span>
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Putz, Fassadentechnik &amp; WDVS aus einer Hand</span>
+          </div>
+        </div>
+
+        <div class="bento-card bento-services">
+          <span class="bento-services-label">Unsere Leistungen</span>
+          <div class="mini-pills">
+            <button class="mini-pill" data-tab="innenputz">Innenputz</button>
+            <button class="mini-pill" data-tab="aussenputz">Außenputz</button>
+            <button class="mini-pill" data-tab="wdvs">WDVS</button>
+            <button class="mini-pill" data-tab="fassadentechnik">Fassadentechnik</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- LEISTUNGEN -->
+  <section class="section services-section" id="leistungen">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Leistungen</span>
+        <h2>Alles rund um Putz</h2>
+        <p>Ein Klick, eine Leistung. So sehen Sie genau, was Ziva Bau für Sie übernimmt.</p>
+      </div>
+
+      <div class="tab-nav-wrap reveal">
+        <div class="tab-nav" id="tabNav">
+          <span class="tab-indicator" id="tabIndicator"></span>
+          <button class="tab-btn active" data-tab="innenputz">Innenputz</button>
+          <button class="tab-btn" data-tab="aussenputz">Außenputz</button>
+          <button class="tab-btn" data-tab="wdvs">WDVS</button>
+          <button class="tab-btn" data-tab="fassadentechnik">Fassadentechnik</button>
+        </div>
+      </div>
+
+      <div class="tab-panels reveal">
+        <div class="tab-panel active" data-panel="innenputz">
+          <div class="panel-grid">
+            <div class="panel-text">
+              <div class="panel-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 21l11-11"/><path d="M13 6l5 5-3 3-5-5z"/></svg>
+              </div>
+              <h3>Innenputz</h3>
+              <p class="desc">Für Wohn- und Gewerbebauten jeder Größe — von der Grundierung bis zum feinen Oberputz, als Maschinenputz auch für sehr große Flächen und mehrere Wohneinheiten.</p>
+              <ul class="panel-list">
+                <li>Glatt- &amp; Rauputz für Wohn- und Gewerberäume</li>
+                <li>Maschinenputz für effiziente, gleichmäßige Ergebnisse</li>
+                <li>Grundierung &amp; Untergrundvorbereitung</li>
+                <li>Rissausbesserung &amp; Ausbesserungsputz</li>
+              </ul>
+              <a href="#kontakt" class="btn-link">Angebot für Innenputz <span class="arrow">→</span></a>
+            </div>
+            <div class="panel-visual">
+              <img src="assets/images/innenputz.jpg" alt="Ziva Bau Mitarbeiter beim Auftragen von Innenputz" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="aussenputz" hidden>
+          <div class="panel-grid">
+            <div class="panel-text">
+              <div class="panel-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 12l9-8 9 8"/><path d="M6 10v10h12V10"/></svg>
+              </div>
+              <h3>Außenputz</h3>
+              <p class="desc">Schutz und Ästhetik für Neubau- und Bestandsobjekte — wetterfest, langlebig und auch bei großflächigen Fassaden termingerecht umgesetzt.</p>
+              <ul class="panel-list">
+                <li>Fassadenputz in allen gängigen Körnungen</li>
+                <li>Egalisationsanstrich &amp; Farbgestaltung</li>
+                <li>Sockelputz &amp; saubere Detailarbeiten</li>
+                <li>Vorbereitung &amp; Untergrund für WDVS</li>
+              </ul>
+              <a href="#kontakt" class="btn-link">Angebot für Außenputz <span class="arrow">→</span></a>
+            </div>
+            <div class="panel-visual">
+              <img src="assets/images/aussenputz.jpg" alt="Ziva Bau Mitarbeiter beim Verputzen einer Fassade auf dem Gerüst" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="wdvs" hidden>
+          <div class="panel-grid">
+            <div class="panel-text">
+              <div class="panel-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16"/><rect x="13" y="4" width="8" height="16"/><circle cx="7" cy="8" r="0.5" fill="currentColor"/><circle cx="17" cy="8" r="0.5" fill="currentColor"/></svg>
+              </div>
+              <h3>Wärmedämmverbundsystem</h3>
+              <p class="desc">Energetische Fassadendämmung nach GEG-Standard — für Neubau und Sanierung, für weniger Heizkosten und ein besseres Raumklima.</p>
+              <ul class="panel-list">
+                <li>Vollwärmeschutz für Alt- und Neubauten</li>
+                <li>Dämmstärken nach GEG-Vorgaben</li>
+                <li>Sockeldämmung &amp; saubere Detailausführung</li>
+                <li>Abschließender Ober- und Edelputz</li>
+              </ul>
+              <a href="#kontakt" class="btn-link">Angebot für WDVS <span class="arrow">→</span></a>
+            </div>
+            <div class="panel-visual">
+              <img src="assets/images/wdvs.jpg" alt="Frisch verputzte Fassade mit Wärmedämmverbundsystem im Neubau" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="fassadentechnik" hidden>
+          <div class="panel-grid">
+            <div class="panel-text">
+              <div class="panel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <h3>Fassadentechnik</h3>
+              <p class="desc">Für technisch anspruchsvolle Fassadendetails — damit Ihre Fassade dauerhaft dicht bleibt und Anschlüsse fachgerecht ausgeführt sind.</p>
+              <ul class="panel-list">
+                <li>Fenster-, Tür- und Sockelanschlüsse fachgerecht abgedichtet</li>
+                <li>Dehnungsfugen nach statischen Vorgaben</li>
+                <li>Eckschutz- und Anputzprofile für stoßfeste Kanten</li>
+                <li>Fassadenentwässerung &amp; Tropfkanten</li>
+              </ul>
+              <a href="#kontakt" class="btn-link">Angebot für Fassadentechnik <span class="arrow">→</span></a>
+            </div>
+            <div class="panel-visual pattern-lattice"></div>
+          </div>
+        </div>
+
+        </div>
+    </div>
+  </section>
+
+
+  <!-- WARUM WIR -->
+  <section class="section why-section" id="warum-uns">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Warum wir</span>
+        <h2>Darum Ziva Bau</h2>
+        <p>Was uns von anderen Betrieben unterscheidet.</p>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <h4>Persönliche Beratung</h4>
+          <p>Wir schauen uns Ihr Vorhaben vor Ort an und beraten Sie individuell — ohne Verkaufsdruck.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          </div>
+          <h4>Termintreue</h4>
+          <p>Vereinbarte Start- und Fertigstellungstermine halten wir zuverlässig ein.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="3.5"/><path d="M22 20v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Eigenes Fachpersonal</h4>
+          <p>Wir arbeiten mit eigenem, erfahrenem Team — keine wechselnden Subunternehmer.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h4>Saubere Übergabe</h4>
+          <p>Ordentliche Baustelle, sorgfältige Abnahme und gesetzliche Gewährleistung auf alle Arbeiten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Häufige Fragen</span>
+        <h2>Gut zu wissen</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Wie lange dauern Putzarbeiten? <span class="plus">+</span></button>
+          <div class="faq-a"><p>Das hängt von der Fläche und dem Zustand des Untergrunds ab. Ein normales Zimmer ist meist in 2–4 Tagen fertig, größere Flächen entsprechend länger — mit Maschinenputz geht es auch bei großen Flächen zügig. Nach einem Vor-Ort-Termin nennen wir Ihnen einen konkreten Zeitrahmen.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Muss ich während der Arbeiten ausziehen? <span class="plus">+</span></button>
+          <div class="faq-a"><p>In der Regel nicht. Wir arbeiten raumweise und schotten Staub mit Folien ab, sodass Sie die restliche Wohnung normal nutzen können.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Was kostet eine Fassadendämmung (WDVS)? <span class="plus">+</span></button>
+          <div class="faq-a"><p>Der Preis hängt von Fassadenfläche, gewählter Dämmstärke und Untergrund ab. Nach einem kurzen Vor-Ort-Termin erhalten Sie von uns ein unverbindliches Angebot.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Wann kann nach dem Innenputz gestrichen werden? <span class="plus">+</span></button>
+          <div class="faq-a"><p>Als Faustregel gilt: pro Millimeter Putzstärke etwa ein Tag Trocknungszeit. Bei normalem Innenputz sind das meist 2–4 Wochen. Wir prüfen die Restfeuchte vor Ort und sagen Ihnen verbindlich, wann gestrichen oder tapeziert werden kann.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Gebt ihr Garantie auf eure Arbeiten? <span class="plus">+</span></button>
+          <div class="faq-a"><p>Ja, auf alle Gewerke geben wir die gesetzliche Gewährleistung. Details besprechen wir individuell in Ihrem Angebot.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE BEWERTUNGEN -->
+  <!-- PLATZHALTER: Bewertung (4.9), Anzahl und der Link unten sind Beispielwerte.
+       Sobald euer Google-Unternehmensprofil eingerichtet ist:
+       1. Zahlen unten durch eure echten Werte ersetzen (aus dem Google-Profil ablesbar)
+       2. Den Link-href durch euren echten Google-Profil-Link ersetzen
+          (zu finden über Google-Unternehmensprofil > "Profil teilen")
+       3. Für eine LIVE-aktuelle Anzeige (statt manuell gepflegter Zahl) könnt ihr
+          später einen Bewertungs-Widget-Dienst einbinden, z.B. Elfsight, EmbedSocial
+          oder Trustindex — die bieten ein fertiges <script>-Snippet mit eurer
+          Google-Place-ID an, das ihr hier an Stelle dieses Blocks einsetzen könnt. -->
+  <section class="section google-reviews-section">
+    <div class="wrap">
+      <div class="google-reviews-card reveal">
+        <div class="google-reviews-badge">
+          <svg viewBox="0 0 48 48" width="28" height="28">
+            <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
+            <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
+            <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/>
+            <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
+          </svg>
+        </div>
+        <div class="google-reviews-text">
+          <div class="google-reviews-stars" aria-label="4,9 von 5 Sternen">
+            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+          </div>
+          <p><strong>4,9 von 5</strong> · Google-Rezensionen <span class="reviews-placeholder-note">(Platzhalter)</span></p>
+        </div>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" class="btn btn-outline google-reviews-btn">Auf Google ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section" id="kontakt">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <div class="section-head" style="margin-bottom:26px;">
+          <span class="section-eyebrow">Kontakt</span>
+          <h2>Jetzt unverbindlich anfragen</h2>
+          <p>Wir melden uns in der Regel innerhalb von 2 Stunden zurück.</p>
+        </div>
+        <div class="contact-grid">
+          <form onsubmit="return handleSubmit(event)">
+            <div>
+              <label for="company">Firma <span style="font-weight:400;color:var(--ink-soft);">(optional)</span></label>
+              <input id="company" name="company" type="text" placeholder="Firmenname">
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Ihr Name" required>
+              </div>
+              <div>
+                <label for="phone">Telefon</label>
+                <input id="phone" name="phone" type="tel" placeholder="Für Rückruf" required>
+              </div>
+            </div>
+            <div>
+              <label for="topic">Worum geht's?</label>
+              <select id="topic" name="topic">
+                <option>Innenputz</option>
+                <option>Außenputz</option>
+                <option>Wärmedämmverbundsystem (WDVS)</option>
+                <option>Fassadentechnik</option>
+                <option>Mehreres / bin mir nicht sicher</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" placeholder="Kurz beschreiben, worum es geht …"></textarea>
+            </div>
+            <button class="form-submit" type="submit">Anfrage senden</button>
+            <p class="form-note" id="form-status">Kostenlos &amp; unverbindlich.</p>
+          </form>
+
+          <dl class="contact-info">
+            <dt>Telefon</dt>
+            <dd><a href="tel:+491633792527">+49 163 3792527</a></dd>
+            <dt>E-Mail</dt>
+            <dd><a href="mailto:info@ziva-bau.de">info@ziva-bau.de</a></dd>
+            <dt>Adresse</dt>
+            <dd>Weigandufer 14, 12045 Berlin</dd>
+            <dt>Geschäftszeiten</dt>
+            <dd>Mo–Fr 8:00–17:00 Uhr</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="Ziva Bau Logo" class="footer-logo">
+      <span class="footer-tagline">Innenputz · Außenputz · WDVS</span>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ziva Bau GmbH — Innenputz, Außenputz &amp; WDVS</span>
+      <ul class="footer-links">
+        <li><a href="#kontakt">Anfrage</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="#" data-open-cookie-settings>Cookie-Einstellungen</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <!-- ===================== WHATSAPP-BUTTON ===================== -->
+  <!-- WICHTIG: "491234567890" unten durch eure echte WhatsApp-Nummer ersetzen
+       (internationales Format OHNE +, 00 oder Leerzeichen, z.B. deutsche Handynummer
+       0151 234567 wird zu 49151234567). Der vorbelegte Text hinter ?text= ist die
+       Nachricht, die beim Öffnen automatisch im Chat vorausgefüllt wird. -->
+  <a href="https://wa.me/491633792527?text=Hallo%20Ziva%20Bau%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Leistungen."
+     class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp kontaktieren">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="#FFFFFF"><path d="M16.004 3C9.377 3 4 8.373 4 15c0 2.386.7 4.61 1.906 6.478L4 29l7.72-1.878A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm6.99 16.987c-.297.836-1.47 1.53-2.41 1.73-.64.135-1.478.243-4.29-.92-3.6-1.49-5.916-5.135-6.096-5.372-.173-.238-1.46-1.943-1.46-3.706 0-1.762.926-2.63 1.253-2.99.328-.36.716-.45.955-.45.238 0 .478.003.686.013.22.01.516-.083.807.616.297.716 1.01 2.478 1.098 2.658.09.18.15.39.03.628-.12.238-.18.386-.358.594-.18.208-.376.464-.537.624-.18.18-.367.375-.157.734.208.36.926 1.528 1.988 2.475 1.366 1.218 2.518 1.596 2.877 1.776.36.18.568.15.777-.09.208-.24.895-1.043 1.134-1.402.238-.36.477-.298.804-.18.328.12 2.08.982 2.437 1.16.358.18.596.268.686.418.09.15.09.867-.207 1.703z"/></svg>
+  </a>
+
+
+  <!-- ===================== COOKIE-BANNER ===================== -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis">
+    <div class="cookie-inner">
+      <p class="cookie-text">
+        <strong>Diese Website respektiert Ihre Privatsphäre.</strong>
+        Wir setzen selbst keine Cookies. Optional laden wir Schriftarten von Google
+        (Google Fonts) nach – dabei wird Ihre IP-Adresse an Google-Server übertragen.
+        Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+      <div class="cookie-actions">
+        <button type="button" class="cookie-btn" id="cookieOpenSettings">Einstellungen</button>
+        <button type="button" class="cookie-btn" id="cookieRejectAll">Nur notwendige</button>
+        <button type="button" class="cookie-btn primary" id="cookieAcceptAll">Alle akzeptieren</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= COOKIE-EINSTELLUNGEN-MODAL ================= -->
+  <div class="cookie-modal-overlay" id="cookieModalOverlay">
+    <div class="cookie-modal" role="dialog" aria-label="Cookie-Einstellungen">
+      <h3>Cookie-Einstellungen</h3>
+      <p>
+        Wir verwenden selbst keine Cookies und kein Tracking. Die einzige optionale
+        Komponente sind extern eingebundene Schriftarten von Google. Sie können frei
+        wählen, ob diese geladen werden dürfen — ohne Zustimmung nutzt die Seite
+        automatisch eine gleichwertige Systemschrift.
+      </p>
+
+      <div class="cookie-option">
+        <div class="cookie-option-text">
+          <strong>Technisch notwendig</strong>
+          <span>Speichert ausschließlich Ihre Cookie-Auswahl. Immer aktiv.</span>
+        </div>
+        <label class="cookie-switch">
+          <input type="checkbox" checked disabled>
+          <span class="track"></span>
+        </label>
+      </div>
+
+      <div class="cookie-option">
+        <div class="cookie-option-text">
+          <strong>Externe Schriftarten (Google Fonts)</strong>
+          <span>Lädt Schriftdateien von Google-Servern nach; überträgt dabei Ihre IP-Adresse in die USA.</span>
+        </div>
+        <label class="cookie-switch">
+          <input type="checkbox" id="cookieFontsToggle">
+          <span class="track"></span>
+        </label>
+      </div>
+
+      <div class="cookie-modal-actions">
+        <button type="button" class="cookie-btn" id="cookieModalClose">Abbrechen</button>
+        <button type="button" class="cookie-btn" id="cookieModalSave">Auswahl speichern</button>
+        <button type="button" class="cookie-btn primary" id="cookieModalAcceptAll">Alle akzeptieren</button>
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="assets/script.js"></script>
+
+</body>
+</html>
